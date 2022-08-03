@@ -4,7 +4,6 @@ let option;
 
 let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
 myChart.showLoading();
-console.log(PATH);
 $.getJSON(PATH, function (graph) {
     myChart.hideLoading();
     graph.nodes.forEach(function (node) {
