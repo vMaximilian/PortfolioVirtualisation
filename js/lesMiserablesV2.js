@@ -1,8 +1,9 @@
 let chartDom = document.getElementById('mainV2');
 let myChart = echarts.init(chartDom);
 let option;
-
-let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
+//Local path & hosted path
+//let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
+let PATH = 'https://github.com/vMaximilian/PortfolioVirtualisation/blob/main/ressources/lesMiserablesV2.json';
 myChart.showLoading();
 $.getJSON(PATH, function (graph) {
     myChart.hideLoading();

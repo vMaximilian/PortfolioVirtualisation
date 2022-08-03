@@ -1,8 +1,9 @@
 let chartDom3 = document.getElementById('radialTree');
 let myChart3 = echarts.init(chartDom3);
 let option3;
-
-let PATHRADIAL = 'http://localhost:8888/PortfolioVirtualisation/ressources/radialTree.json';
+//Local path & hosted path
+//let PATHRADIAL = 'http://localhost:8888/PortfolioVirtualisation/ressources/radialTree.json';
+let PATHRADIAL = 'https://github.com/vMaximilian/PortfolioVirtualisation/blob/main/ressources/radialTree.json';
 $.get(PATHRADIAL, function (data) {
   myChart3.hideLoading();
   myChart3.setOption(
