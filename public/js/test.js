@@ -2,7 +2,7 @@
       var myChart = echarts.init(document.getElementById('card-body-main'));
       var option;
       
-      var PATH = 'http://localhost/PortfolioVirtualisation-main/ressources/product_connections.json';
+      var PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/product_connections.json';
       myChart.showLoading();
       console.log(PATH);
       $.getJSON(PATH, function (graph) {
