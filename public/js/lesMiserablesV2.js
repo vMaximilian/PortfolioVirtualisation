@@ -1,8 +1,8 @@
-// Initialize the echarts instance based on the prepared dom
-var myChart = echarts.init(document.getElementById('mainV2'));
-var option;
+let chartDom = document.getElementById('mainV2');
+let myChart = echarts.init(chartDom);
+let option;
 
-var PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
+let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
 myChart.showLoading();
 console.log(PATH);
 $.getJSON(PATH, function (graph) {
