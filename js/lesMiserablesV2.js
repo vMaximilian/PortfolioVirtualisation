@@ -3,7 +3,7 @@ let myChart = echarts.init(chartDom);
 let option;
 //Local path & hosted path
 //let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
-let PATH = 'https://github.com/vMaximilian/PortfolioVirtualisation/blob/main/ressources/lesMiserablesV2.json';
+let PATH = 'https://raw.githubusercontent.com/vMaximilian/PortfolioVirtualisation/main/ressources/lesMiserablesV2.json?token=GHSAT0AAAAAABXISRTC2YW2PLI4POOS2CRKYXKK6LA';
 myChart.showLoading();
 $.getJSON(PATH, function (graph) {
     myChart.hideLoading();

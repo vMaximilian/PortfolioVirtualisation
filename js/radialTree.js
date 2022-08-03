@@ -3,7 +3,7 @@ let myChart3 = echarts.init(chartDom3);
 let option3;
 //Local path & hosted path
 //let PATHRADIAL = 'http://localhost:8888/PortfolioVirtualisation/ressources/radialTree.json';
-let PATHRADIAL = 'https://github.com/vMaximilian/PortfolioVirtualisation/blob/main/ressources/radialTree.json';
+let PATHRADIAL = 'https://raw.githubusercontent.com/vMaximilian/PortfolioVirtualisation/main/ressources/radialTree.json?token=GHSAT0AAAAAABXISRTCXZDOLXRE6J6B3U6SYXKK5YQ';
 $.get(PATHRADIAL, function (data) {
   myChart3.hideLoading();
   myChart3.setOption(
