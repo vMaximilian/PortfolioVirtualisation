@@ -46,3 +46,7 @@
   fill: none;
   pointer-events: none;
 }
+
+.top-space {
+  margin-top: 22vh;
+}
