@@ -22,26 +22,36 @@
       <a class="navbar-brand" href="#">
         <h5>VMware Portfolio Visualisation</h5>
       </a>
-      <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse"
-        data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </div>
   </nav>
+  <div class="nav bg-white shadow-sm">
+    <nav class="nav nav-underline" aria-label="Secondary navigation">
+      <a class="nav-link" href="#">Dashboard</a>
+      <a class="nav-link" href="products/vsphere.html">vSphere</a>
+      <a class="nav-link" href="products/VCF.html">Cloud Foundation</a>
+      <a class="nav-link" href="products/NSX_T_DC.html">NSX</a>
+      <a class="nav-link text-info" href="products/CarbonBlackEDR.html">Carbon Black</a>
+      <a class="nav-link" href="products/Horizon.html">Horizon</a>
+      <a class="nav-link" href="products/WorkspaceONE.html">WS1</a>
+      <a class="nav-link" href="products/TKG.html">Tanzu Kubernetes Grid</a>
+      <a class="nav-link" href="products/TMC.html">Tanzu Mission Control</a>
+    </nav>
+  </div>
   <div class="container-fluid">
     <div class="row">
       <main class="py-5 px-md-5">
-        <h1 class="h2">Tanzu Kubernetes Grid</h1>
-        <p>CNCFcertified, enterprise-ready Kubernetes runtime that streamlines operations across a multi-cloud infrastructure. Tanzu Kubernetes Grid is fully upstream aligned and is amplified through the use of complementary open source projects.</p>
+        <h1 class="h2">NSX-T Datacenter</h1>
+        <p>Network virtualisation and security platform that looks at provisioning and managing networks independently of the underlying hardware.</p>
           <div class="row my-4">
             <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
               <div class="card">
                 <h5 class="card-header">Pain point and how we solve it</h5>
                 <div class="card-body">
                   <h5 class="card-title">Pain point</h5>
-                  <p class="card-text">Infrastructure teams struggling to support LOBs/developers pushing for container adoption while also support existing apps.
+                  <p class="card-text"> Network is usually a siloed environment from within datacenters. It needs specific hardware and trained workforce, which represents expensive investments and vendor lock-in. On the security point of view, traditionally the security is seen as something perimetral.
+                    </p>
                   <h5 class="card-title">Solution</h5>
-                  <p class="card-text">Enable developers to adopt containers and have admin provision resources, creating self-service platform.</p>
+                  <p class="card-text">Create multiple virtual networks with diverse requirements. Deploy firewalls around each virtual machine.</p>
                   <p class="card-text text-success">Here could be specific information</p>
                 </div>
               </div>
@@ -50,10 +60,13 @@
               <div class="card">
                 <h5 class="card-header">Discovery questions</h5>
                 <div class="card-body">
-                  <p class="card-text"><ul><li>What obstacles have you encountered using Kubernetes?</li><br>
-                    <li>Are you happy with your (non-Tanzu Kubernetes platform?</li><br>
-                    <li>Where are you in your Kubernetes journey?</li><br>
-                    <li>What if you could give developers self-service access to resources within guardrails defined by the Infrastructure & Operations team?</li></ul></p>
+                  <p class="card-text"><ul><li>How are you currently managing your network environment?
+                    </li><br>
+                    <li>Are you having troubles with setting policies for your VMs when migrating?
+                      </li><br>
+                      <li>How do you approach security from a networking point of view?
+                      </li><br>
+                    <li>How old is your networking hardware? When are you planning to refresh it?</li></ul></p>
                   <p class="card-text text-success">Here could be specific information</p>
                 </div>
               </div>
@@ -62,11 +75,11 @@
               <div class="card">
                 <h5 class="card-header">Success story</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Volkswagen Financial Services</h5>
+                  <h5 class="card-title">iOCO Cloud</h5>
                   <!-- Have to modify the src depending on the logo-->
-                  <img id="logo" src="../logos/Volkswagen_logo.png" style="display: grid; width: 100%;">
+                  <img id="logo" src="../logos/ioco_logo.png" style="display: grid; width: 100%;">
                   <br>
-                  <p class="card-text">As part of Volkswagen Financial Services, a division of Volkswagen AG, Volkswagen Financial Services AG is present in 48 markets worldwide and employs more than 16,558 people. Its key business areas include dealer and customer financing, leasing, banking and insurance, fleet management and mobility services. While the demands on financial institutions in the automotive industry are increasing, Volkswagen Financial Services is focusing on automated management of digital applications. In 2019, VMware® Tanzu Kubernetes Grid Integrated Edition (TKGI) and VMware NSX-T was implemented to integrate a platform that is flexible, highly available and secure.</p>
+                  <p class="card-text">offers cloud services to customers through its hosted cloud services built on VMware technologies. Services that today allow customers to build a multi-and hybrid cloud environment, and with the help of the interoperability with VMware, enable easy alignment to the hyperscalers with whom iOCO has strategic partnerships, in particular AWS. Through its journey to offering hosted cloud services, iOCO has partnered with interconnectivity partner Teraco Data Environments, specifically leveraging its Africa Cloud Exchange. This along with its status as a VMware Cloud Verified Partner has enabled the company to focus on creating, developing, and designing its “any cloud-as-a-service” offerings for a global customer base.</p>
                   <p class="card-text text-success">Here could be specific information</p>
                 </div>
               </div>
@@ -75,9 +88,10 @@
               <div class="card">
                 <h5 class="card-header">Useful links</h5>
                 <div class="card-body">
-                  <p class="card-text">
-                    <a href="https://d1fto35gcfffzn.cloudfront.net/tanzu/tkg/TKG-Solution-Overview.pdf">Solutions Brief</a><br>
-                    <a href="https://labs.hol.vmware.com/HOL/catalogs/lab/10659">Test Drive</a><br>
+                  <p class="card-text"> 
+                    <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/nsx/vmware-nsx-datasheet.pdf">Datasheet</a><br>
+                    <a href="https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/installation/GUID-3E0C4CEC-D593-4395-84C4-150CD6285963.html">Installation guide</a><br>
+                    <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/nsx/vmware-nsx-solution-brief.pdf">Solution Overview</a><br>
                   <p class="card-text text-success">Here could be specific information</p>
                 </div>
               </div>
