@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VMware Portfolio Visualisation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- CDN found form official docs https://www.jsdelivr.com/package/npm/echarts?path=dist-->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.js"
+    integrity="sha256-E5b0O4AhPTlxRxD4SNUVrMx7/RQDnV2PjWpPIjWoXd4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery"></script>
+  <base target="_blank">
+</head>
+
+<body>
+  <nav class="navbar navbar-nav bg-light p-2">
+    <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+      <a class="navbar-brand" href="#">
+        <h5>VMware Portfolio Visualisation</h5>
+      </a>
+    </div>
+  </nav>
+  <div class="nav bg-white shadow-sm">
+    <nav class="nav nav-underline" aria-label="Secondary navigation">
+      <a class="nav-link" href="#">Dashboard</a>
+      <a class="nav-link" href="products/vsphere.html">vSphere</a>
+      <a class="nav-link" href="products/VCF.html">Cloud Foundation</a>
+      <a class="nav-link" href="products/NSX_T_DC.html">NSX</a>
+      <a class="nav-link text-info" href="products/CarbonBlackEDR.html">Carbon Black</a>
+      <a class="nav-link" href="products/Horizon.html">Horizon</a>
+      <a class="nav-link" href="products/WorkspaceONE.html">WS1</a>
+      <a class="nav-link" href="products/TKG.html">Tanzu Kubernetes Grid</a>
+      <a class="nav-link" href="products/TMC.html">Tanzu Mission Control</a>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <main class="py-5 px-md-5">
+        <h1 class="h2">Tanzu Mission Control</h1>
+        <p>Centralized management platform for consistently operating and securing your
+          Kubernetes infrastructure and modern applications across multiple teams and clouds.</p>
+          <div class="row my-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card">
+                <h5 class="card-header">Pain point and how we solve it</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Pain point</h5>
+                  <p class="card-text">As more K8s envrionments are adopted, there is an increase in complexity over the management of them. Several sites are hard to mantain and operate.
+                    </p>
+                  <h5 class="card-title">Solution</h5>
+                  <p class="card-text">Simplify Kubernetes operations for multi-cloud, centralizing management with the platform team across vSphere environments.</p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Discovery questions</h5>
+                <div class="card-body">
+                  <p class="card-text"><ul><li>Which Kubernetes distributions are you using today / intending to use?
+                    </li><br>
+                    <li>How will you manage your Kubernetes footprint consistently (policy, security, etc.)?
+                      </li><br>
+                    <li>Who is responsible for managing your Kubernetes footprint? Is it centralized?</li></ul></p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Success story</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Jushuo Technology</h5>
+                  <!-- Have to modify the src depending on the logo-->
+                  <img id="logo" src="../logos/Sysage_logo.jpg" style="display: grid; width: 100%;">
+                  <br>
+                  <p class="card-text">Jushuo Technology assists customers with one-time digital transformation services; in order to promote quality optimization and service efficiency, it is decided to import VMware Tanzu. Now, new function development can be completed within a week, and bug modifications can be completed within one day and the version can be automatically released online. If you build a native K8s environment by yourself, from creating a VM, installing K8s-related packages to creating a K8s cluster, you can now complete the job in 5~10 minutes through Tanzu. Tanzu supports the node self-healing function. Even if the Master or Worker Node is damaged, it will immediately self-heal, and reproduce the same environment and data before the damage without human intervention.</p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Useful links</h5>
+                <div class="card-body">
+                  <p class="card-text"> <a href="https://tanzu.vmware.com/content/tanzu-mission-control/tanzu-mission-control-brief">Solution brief</a><br>
+                    <a href="https://labs.hol.vmware.com/HOL/catalogs/lab/10506">Test drive</a><br>
+                    <a href="https://tanzu.vmware.com/content/tanzu-mission-control/vmware-tanzu-mission-control-expands-kubernetes-data-protection">TMC K8s Data protection</a><br>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+        <div class="row">
+          <div class="col-12 col-xl-8 mb-4 mb-lg-0">
+            <div class="card">
+              <h5 class="card-header">Solution connections</h5>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Some information</th>
+                        <th scope="col">Product</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Solution 1</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Solution 2</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Solution 3</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Solution 4</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Solution 5</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Solution 6</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <a href="#" class="btn btn-block btn-light">View all</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="card">
+              <h5 class="card-header">Information from last 6 months</h5>
+              <div class="card-body">
+                <div id="traffic-chart"></div>
+            </div>
+          </div>
+        </div>
+        Les Miserables V2 Chart 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">What an amazing chart</h5>
+              <div class="card-body">
+                <div id="mainV2" style="width:75vw;height:85vh;"> </div>
+                <script src="js/lesMiserablesV2.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        Les Miserables V2 Chart 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">Another amazing chart</h5>
+              <div class="card-body">
+                <div id="graphNr2" style="width:75vw;height:85vh;"> </div>
+                <script src="js/weightDistroGraph.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+         Radial Tree Graph 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">Radial Tree Chart</h5>
+              <div class="card-body">
+                <div id="radialTree" style="width:75vw;height:85vh;"> </div>
+                <script src="js/radialTree.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="js/towerGraph.js"></script>
+</body>
+
+</html>

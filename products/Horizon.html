@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VMware Portfolio Visualisation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- CDN found form official docs https://www.jsdelivr.com/package/npm/echarts?path=dist-->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.js"
+    integrity="sha256-E5b0O4AhPTlxRxD4SNUVrMx7/RQDnV2PjWpPIjWoXd4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery"></script>
+  <base target="_blank">
+</head>
+
+<body>
+  <nav class="navbar navbar-nav bg-light p-2">
+    <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+      <a class="navbar-brand" href="#">
+        <h5>VMware Portfolio Visualisation</h5>
+      </a>
+    </div>
+  </nav>
+  <div class="nav bg-white shadow-sm">
+    <nav class="nav nav-underline" aria-label="Secondary navigation">
+      <a class="nav-link" href="#">Dashboard</a>
+      <a class="nav-link" href="products/vsphere.html">vSphere</a>
+      <a class="nav-link" href="products/VCF.html">Cloud Foundation</a>
+      <a class="nav-link" href="products/NSX_T_DC.html">NSX</a>
+      <a class="nav-link text-info" href="products/CarbonBlackEDR.html">Carbon Black</a>
+      <a class="nav-link" href="products/Horizon.html">Horizon</a>
+      <a class="nav-link" href="products/WorkspaceONE.html">WS1</a>
+      <a class="nav-link" href="products/TKG.html">Tanzu Kubernetes Grid</a>
+      <a class="nav-link" href="products/TMC.html">Tanzu Mission Control</a>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <main class="py-5 px-md-5">
+        <h1 class="h2">Horizon</h1>
+        <p>VMware Horizon centralizes end users’ desktops and applications in the datacenter or cloud, so IT can efficiently provision new clients, centralize desktop management, and improve security and compliance. The solution provides the ability to efficient-ly and cost effectively deliver, manage, and monitor virtual desktops and published applications to end users who may not need access to a full desktop.</p>
+          <div class="row my-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card">
+                <h5 class="card-header">Pain point and how we solve it</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Pain point</h5>
+                  <p class="card-text"> IT teams struggling to manage a growing digital workforce. Companies looking to offer a more flexible work environment but only has traditional tools.Operational, storage and time costs can scale when deploying virtual desktops. External employees need to access ressources similarly as an internal employee without compromising security.
+                    </p>
+                  <h5 class="card-title">Solution</h5>
+                  <p class="card-text">Stateless desktops, painless application packaging and installation. Improve ROI by securing data, simplifying compliance and dynamically allocate virtual ressources with a single platform that will drive down costs.</p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Discovery questions</h5>
+                <div class="card-body">
+                  <p class="card-text"><ul><li>How many employees and devices do you have under management?
+                    </li><br>
+                    <li>How are you providing access to your contractor / cyclical workforce?
+                      </li><br>
+                    <li>What technologies are you  using to support end users today?</li></ul><br>
+                    <li>What does your cloud strategy look like? (Horizon Cloud)</li></ul><br>
+                    <li>What does your refresh cycle for hardware and  infrastructure look like?</li></ul></p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Success story</h5>
+                <div class="card-body">
+                  <h5 class="card-title">South Eastern Health</h5>
+                  <!-- Have to modify the src depending on the logo-->
+                  <img id="logo" src="../logos/SouthEasternHealth_logo.png" style="display: grid; width: 100%;">
+                  <br>
+                  <p class="card-text">The South Eastern Health and Social Care Trust (SEHSCT) is one of six healthcare trusts in Northern Ireland. When the COVID-19 pandemic hit, it needed to accelerate its vision for integrated, community-based healthcare by increasing remote working capabilities
+                  </p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Useful links</h5>
+                <div class="card-body">
+                  <p class="card-text"> 
+                    <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/workspace-one/vmware-workspace-one-datasheet.pdf">Solution brief</a><br>
+                    <a href="https://customerconnect.vmware.com/en/web/vmware/evalcenter?p=workspace-one-hol-uem-gs-22">Test drive</a><br>
+                    <a href="https://techzone.vmware.com/">Digital Workspace Tech Zone</a><br>
+                    <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/workspace-one/workspace-one-editions-comparison.pdf">WorkspaceONE Editions</a><br>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+        <div class="row">
+          <div class="col-12 col-xl-8 mb-4 mb-lg-0">
+            <div class="card">
+              <h5 class="card-header">Solution connections</h5>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Some information</th>
+                        <th scope="col">Product</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Solution 1</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Solution 2</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Solution 3</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Solution 4</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Solution 5</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Solution 6</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <a href="#" class="btn btn-block btn-light">View all</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="card">
+              <h5 class="card-header">Information from last 6 months</h5>
+              <div class="card-body">
+                <div id="traffic-chart"></div>
+            </div>
+          </div>
+        </div>
+        Les Miserables V2 Chart 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">What an amazing chart</h5>
+              <div class="card-body">
+                <div id="mainV2" style="width:75vw;height:85vh;"> </div>
+                <script src="js/lesMiserablesV2.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        Les Miserables V2 Chart 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">Another amazing chart</h5>
+              <div class="card-body">
+                <div id="graphNr2" style="width:75vw;height:85vh;"> </div>
+                <script src="js/weightDistroGraph.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+         Radial Tree Graph 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">Radial Tree Chart</h5>
+              <div class="card-body">
+                <div id="radialTree" style="width:75vw;height:85vh;"> </div>
+                <script src="js/radialTree.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="js/towerGraph.js"></script>
+</body>
+
+</html>

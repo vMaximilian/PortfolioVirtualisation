@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VMware Portfolio Visualisation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- CDN found form official docs https://www.jsdelivr.com/package/npm/echarts?path=dist-->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.js"
+    integrity="sha256-E5b0O4AhPTlxRxD4SNUVrMx7/RQDnV2PjWpPIjWoXd4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery"></script>
+  <base target="_blank">
+</head>
+
+<body>
+  <nav class="navbar navbar-nav bg-light p-2">
+    <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+      <a class="navbar-brand" href="#">
+        <h5>VMware Portfolio Visualisation</h5>
+      </a>
+    </div>
+  </nav>
+  <div class="nav bg-white shadow-sm">
+    <nav class="nav nav-underline" aria-label="Secondary navigation">
+      <a class="nav-link" href="#">Dashboard</a>
+      <a class="nav-link" href="products/vsphere.html">vSphere</a>
+      <a class="nav-link" href="products/VCF.html">Cloud Foundation</a>
+      <a class="nav-link" href="products/NSX_T_DC.html">NSX</a>
+      <a class="nav-link text-info" href="products/CarbonBlackEDR.html">Carbon Black</a>
+      <a class="nav-link" href="products/Horizon.html">Horizon</a>
+      <a class="nav-link" href="products/WorkspaceONE.html">WS1</a>
+      <a class="nav-link" href="products/TKG.html">Tanzu Kubernetes Grid</a>
+      <a class="nav-link" href="products/TMC.html">Tanzu Mission Control</a>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <main class="py-5 px-md-5">
+        <h1 class="h2">WorkspaceONE</h1>
+        <p>Intelligence-driven digital workspace platform that enables you to simply and securely deliver and manage any app on any device, anywhere. It provides multi-platform unified endpoint management, access control, intrinsic security and automated IT workflows to manage your entire digital workforce.</p>
+          <div class="row my-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card">
+                <h5 class="card-header">Pain point and how we solve it</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Pain point</h5>
+                  <p class="card-text"> IT teams struggling to manage a growing digital workforce. Companies looking to offer a more flexible work environment but only has traditional tools.
+                    </p>
+                  <h5 class="card-title">Solution</h5>
+                  <p class="card-text">Provision a new corporate laptop out of the box, anywhere in the world, from the cloud within minutes. One touch single sign on to all users’ apps with the choice to use any device, employee or corporate owned. Allow organizations to securely embrace SaaS, mobile apps while supporting existing enterprise applications.</p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Discovery questions</h5>
+                <div class="card-body">
+                  <p class="card-text"><ul><li>How are you addressing the trend of a flexible workstyle for your employees?
+                    </li><br>
+                    <li>How many devices do you work with today?
+                      </li><br>
+                    <li>Do you have a BYO program today? How formal is it?</li></ul></p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Success story</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Adobe</h5>
+                  <!-- Have to modify the src depending on the logo-->
+                  <img id="logo" src="../logos/Adobe_logo.png" style="display: grid; width: 100%;">
+                  <br>
+                  <p class="card-text">Adobe employees use a variety of devices and operating systems, causing administrative complexity within the company. But because their IT team wanted to support an environment of choice, they deployed VMware Workspace ONE and VMware Carbon Black Cloud, with Okta Identity Cloud Management, to simplify the delivery and management of apps from any device with a Zero Trust Security approach. Now, staff have a frictionless yet secure experience, streamlined from onboarding of new employees and contractors and through their day-to-day operations, whether in the office or remotely.</p>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+              <div class="card">
+                <h5 class="card-header">Useful links</h5>
+                <div class="card-body">
+                  <p class="card-text"> 
+                    <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/workspace-one/vmware-workspace-one-datasheet.pdf">Solution brief</a><br>
+                    <a href="https://customerconnect.vmware.com/en/web/vmware/evalcenter?p=workspace-one-hol-uem-gs-22">Test drive</a><br>
+                    <a href="https://techzone.vmware.com/">Digital Workspace Tech Zone</a><br>
+                    <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/workspace-one/workspace-one-editions-comparison.pdf">WorkspaceONE Editions</a><br>
+                  <p class="card-text text-success">Here could be specific information</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+        <div class="row">
+          <div class="col-12 col-xl-8 mb-4 mb-lg-0">
+            <div class="card">
+              <h5 class="card-header">Solution connections</h5>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Some information</th>
+                        <th scope="col">Product</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Solution 1</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Solution 2</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Solution 3</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Solution 4</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Solution 5</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Solution 6</td>
+                        <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <a href="#" class="btn btn-block btn-light">View all</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="card">
+              <h5 class="card-header">Information from last 6 months</h5>
+              <div class="card-body">
+                <div id="traffic-chart"></div>
+            </div>
+          </div>
+        </div>
+        Les Miserables V2 Chart 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">What an amazing chart</h5>
+              <div class="card-body">
+                <div id="mainV2" style="width:75vw;height:85vh;"> </div>
+                <script src="js/lesMiserablesV2.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        Les Miserables V2 Chart 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">Another amazing chart</h5>
+              <div class="card-body">
+                <div id="graphNr2" style="width:75vw;height:85vh;"> </div>
+                <script src="js/weightDistroGraph.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+         Radial Tree Graph 
+        <div class="row mt-4">
+          <div class="col-12 col-xl-12">
+            <div class="card">
+              <h5 class="card-header">Radial Tree Chart</h5>
+              <div class="card-body">
+                <div id="radialTree" style="width:75vw;height:85vh;"> </div>
+                <script src="js/radialTree.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="js/towerGraph.js"></script>
+</body>
+
+</html>
