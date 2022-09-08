@@ -3,7 +3,8 @@ let myChart = echarts.init(chartDom);
 let option;
 //Local path & hosted path
 //let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
-let PATH = 'https://raw.githubusercontent.com/vMaximilian/PortfolioVirtualisation/main/ressources/lesMiserablesV2.json';
+//let PATH = 'https://raw.githubusercontent.com/vMaximilian/PortfolioVirtualisation/main/ressources/lesMiserablesV2.json';
+let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/test.json';
 myChart.showLoading();
 $.getJSON(PATH, function (graph) {
     myChart.hideLoading();
@@ -14,8 +15,8 @@ $.getJSON(PATH, function (graph) {
     });
     option = {
         title: {
-            text: 'you can higlight the lines!',
-            subtext: 'Default layout',
+            text: '',
+            subtext: '',
             top: 'top',
             left: 'left'
         },
