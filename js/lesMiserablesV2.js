@@ -1,3 +1,9 @@
+//{a}: series name.
+//{b}: the name of a data item.
+//{c}: the value of a data item.
+//{@xxx}: the value of a dimension named 'xxx', for example, {@product} refers the value of 'product' dimension.
+//{@[n]}: the value of a dimension at the index of n, for example, {@[3]} refers the value at dimensions[3].
+
 let chartDom = document.getElementById('mainV2');
 let myChart = echarts.init(chartDom);
 let option;
@@ -39,11 +45,11 @@ $.getJSON(PATH, function (graph) {
                 type: 'graph',
                 layout: 'none',
                 data: graph.nodes,
-                links: graph.links,
+                links:  graph.links,
                 categories: graph.categories,
                 roam: true,
                 label: {
-                    position: 'right',
+                    position: 'inside', // This was set to right before
                     formatter: '{b}' // This is the name of the product
                 },
                 lineStyle: {
