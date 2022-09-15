@@ -11,7 +11,7 @@ let option;
 //let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/lesMiserablesV2.json';
 //let PATH = 'http://localhost:8888/PortfolioVirtualisation/ressources/test.json';
 //let PATH = 'https://raw.githubusercontent.com/vMaximilian/PortfolioVirtualisation/main/ressources/lesMiserablesV2.json';
-let PATH = 'https://raw.githubusercontent.com/vMaximilian/PortfolioVirtualisation/f9529b0cfb7ce4f4482180353a83da208dbb1860/ressources/test.json';
+let PATH = 'https://raw.githubusercontent.com/vMaximilian/PortfolioVirtualisation/main/ressources/test.json';
 
 myChart.showLoading();
 $.getJSON(PATH, function (graph) {
