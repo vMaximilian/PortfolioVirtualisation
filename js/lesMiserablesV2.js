@@ -35,7 +35,7 @@ $.getJSON(PATH, function (graph) {
         animationEasingUpdate: 'quinticInOut',
         series: [
             {
-                name: 'Les Miserables',
+                name: '',
                 type: 'graph',
                 layout: 'none',
                 data: graph.nodes,
@@ -44,7 +44,7 @@ $.getJSON(PATH, function (graph) {
                 roam: true,
                 label: {
                     position: 'right',
-                    formatter: '{b}'
+                    formatter: '{b}' // This is the name of the product
                 },
                 lineStyle: {
                     color: 'source',

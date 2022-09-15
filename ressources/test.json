@@ -105,7 +105,7 @@
         "symbolSize": 66.66666666666667,
         "x": -87.93029,
         "y": -6.8120565,
-        "value": 100,
+        "value": "Hola que tal",
         "href": "www.google.com",
         "category": 1
       },
@@ -898,6 +898,7 @@
       },
       {
         "source": "25",
+        "showText": "Probando",
         "target": "11"
       },
       {
